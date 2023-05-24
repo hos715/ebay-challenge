@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btnConnectWallet {
+    @apply bg-blue-500 font-bold text-white py-2 px-4 rounded cursor-pointer;
+  }
+  .headerLink {
+    @apply hidden md:inline-flex cursor-pointer font-bold text-sm;
+  }
+  .linkHovered {
+    @apply hover:text-blue-500 hover:underline cursor-pointer text-gray-600;
+  }
+  .c-wrapper {
+    @apply px-4;
+  }
+  .c-column {
+    @apply max-w-6xl mx-auto relative;
+  }
+  .c-listCard {
+    @apply flex items-center flex-col hover:scale-105 transition-all duration-150 ease-out rounded-sm border-gray-200 bg-gray-50 hover:bg-gray-100 cursor-pointer shadow-md p-5;
+  }
+  .c-card--image {
+    @apply w-48 h-40 object-contain rounded-sm transition-all duration-150 ease-in drop-shadow-none shadow-blue-200 hover:drop-shadow-md;
+  }
+  .c-card__btn {
+    @apply flex items-center rounded-lg shadow-md text-white font-bold text-sm ml-auto p-2 transition-all duration-150 ease-linear;
+  }
+  .o-btn--buy-now {
+    @apply bg-gradient-to-b from-blue-300 to-blue-600 hover:from-blue-200 hover:to-blue-500 border-blue-500;
+  }
+  .o-btn--auction {
+    @apply bg-gradient-to-b from-red-300 to-red-600 hover:from-red-200 hover:to-red-500 border-red-500;
+  }
+  .c-form__add--input {
+    @apply border border-gray-300 rounded-lg h-10 w-full p-1 mb-3 text-sm;
+  }
+  .c-btn__primary {
+    @apply bg-gradient-to-b from-blue-300 to-blue-600 hover:from-blue-200 hover:to-blue-500 border-blue-500 px-8 text-center;
+  }
+  .c-card__nfts {
+    @apply flex flex-col items-center min-w-fit transition-all duration-150 bg-slate-50 hover:bg-slate-100 rounded-lg shadow-lg p-4 border-solid border-gray-50 cursor-pointer;
+  }
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+/* 
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+  min-height: 100vh;
+  font-size: 0.875rem;
+} */
